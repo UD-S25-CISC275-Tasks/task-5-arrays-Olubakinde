@@ -30,7 +30,7 @@ jobs:
               with:
                   fetch-depth: 0
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@vmain
               with:
                   node-version: ${{ matrix.node-version }}
             - id: get-repo-values
